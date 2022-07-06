@@ -5,7 +5,6 @@ use crate::ntstatus::NtStatus;
 use ntapi::ntexapi::{SYSTEM_INFORMATION_CLASS, SystemModuleInformation, SystemProcessInformation, SYSTEM_THREAD_INFORMATION};
 use crate::vsb::VariableSizedBox;
 use ntapi::ntzwapi::ZwQuerySystemInformation;
-use alloc::prelude::v1::*;
 use ntapi::ntldr::RTL_PROCESS_MODULES;
 use core::{slice, mem};
 use ntapi::ntapi_base::KPRIORITY;
@@ -18,8 +17,9 @@ use ntapi::ntobapi::OBJECT_NAME_INFORMATION;
 use alloc::string::FromUtf16Error;
 use winapi::um::winnt::PAGE_READWRITE;
 use crate::process::PeProcess;
-use alloc::prelude::v1::*;
 use alloc::vec;
+use alloc::string::String;
+use alloc::vec::Vec;
 
 #[allow(non_camel_case_types)]
 #[repr(i32)]

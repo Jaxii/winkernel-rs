@@ -1,8 +1,10 @@
-use alloc::prelude::v1::*;
 use alloc::string::FromUtf16Error;
 use core::fmt::Debug;
 use crate::basedef::ntapi::_core::fmt::Formatter;
 use crate::basedef::UNICODE_STRING;
+use alloc::string::String;
+use alloc::vec::Vec;
+use alloc::vec;
 
 /// A counted Unicode string.
 #[repr(C)]

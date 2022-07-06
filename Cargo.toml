@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-log = "0.4.14"
-ntapi = { version = "0.3.6", features = ["kernel", "impl-default", "nightly"] }
+log = "0.4.17"
+ntapi = { version = "0.3.7", features = ["kernel", "impl-default", "nightly"] }
 winapi = { version = "0.3.9", features = ["ntdef", "ntstatus", "basetsd", "winnt"] }
-libc = "0.2.106"
-cstr_core = "0.2.4"
+libc = "0.2.126"
+cstr_core = "0.2.5"

@@ -1,6 +1,5 @@
 #![no_std]
 #![feature(alloc_error_handler)]
-#![feature(alloc_prelude)]
 #![feature(core_intrinsics)]
 #![allow(clippy::missing_safety_doc)]
 
